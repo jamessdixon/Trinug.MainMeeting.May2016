@@ -27,8 +27,13 @@ namespace ChickenSoftware.StockAnalyzer.Bot
 
                 // return our reply to the user
                 //return message.CreateReplyMessage($"You sent {length} characters");
-                var stockAnalyzer = new StockAnalyser();
-                var closingPrice = stockAnalyzer.GetStockClose(message.Text);
+                var stockAnalyzer = new StockAnalyzer();
+
+                var ticker = stockAnalyzer.GetTicker(message.Text);
+                var closingPrice = stockAnalyzer.GetStockClose(ticker);
+
+                //var closingPrice = stockAnalyzer.GetStockClose(message.Text);
+
                 if(closingPrice == -1.0)
                 {
                     return message.CreateReplyMessage("Could not find");

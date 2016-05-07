@@ -10,7 +10,7 @@ open Accord.Statistics.Models.Regression.Linear
 type YahooContext = CsvProvider<"http://ichart.finance.yahoo.com/table.csv?s=MSFT">
 type LuisContext = JsonProvider<"../data/Luis.json">
 
-type public StockAnalyser() = 
+type public StockAnalyzer() = 
     member public this.GetStockClose ticker = 
         try
             let stockInfo = YahooContext.Load("http://ichart.finance.yahoo.com/table.csv?s=" + ticker)

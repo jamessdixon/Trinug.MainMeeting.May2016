@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "data", "data", "{0B22B88F-3
 		data\Luis.json = data\Luis.json
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChickenSoftware.StockAnalyzer.Tests", "ChickenSoftware.StockAnalyzer.Tests\ChickenSoftware.StockAnalyzer.Tests.csproj", "{369EB6DA-C416-4D8B-9170-A77BABD0C5CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,10 @@ Global
 		{A8BA1066-5695-4D71-ABB4-65E5A5E0C3D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8BA1066-5695-4D71-ABB4-65E5A5E0C3D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8BA1066-5695-4D71-ABB4-65E5A5E0C3D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{369EB6DA-C416-4D8B-9170-A77BABD0C5CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{369EB6DA-C416-4D8B-9170-A77BABD0C5CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{369EB6DA-C416-4D8B-9170-A77BABD0C5CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{369EB6DA-C416-4D8B-9170-A77BABD0C5CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
