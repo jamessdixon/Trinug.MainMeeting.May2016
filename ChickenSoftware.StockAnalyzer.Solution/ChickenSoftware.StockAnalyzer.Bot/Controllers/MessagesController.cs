@@ -26,22 +26,22 @@ namespace ChickenSoftware.StockAnalyzer.Bot
                 int length = (message.Text ?? string.Empty).Length;
 
                 // return our reply to the user
-                //return message.CreateReplyMessage($"You sent {length} characters");
-                var stockAnalyzer = new StockAnalyzer();
+                return message.CreateReplyMessage($"You sent {length} characters");
+                //var stockAnalyzer = new StockAnalyzer();
 
-                var ticker = stockAnalyzer.GetTicker(message.Text);
-                var closingPrice = stockAnalyzer.GetStockClose(ticker);
+                //var ticker = stockAnalyzer.GetTicker(message.Text);
+                //var closingPrice = stockAnalyzer.GetStockClose(ticker);
 
-                //var closingPrice = stockAnalyzer.GetStockClose(message.Text);
+                ////var closingPrice = stockAnalyzer.GetStockClose(message.Text);
 
-                if(closingPrice == -1.0)
-                {
-                    return message.CreateReplyMessage("Could not find");
-                }
-                else
-                {
-                    return message.CreateReplyMessage(closingPrice.ToString());
-                }
+                //if(closingPrice == -1.0)
+                //{
+                //    return message.CreateReplyMessage("Could not find");
+                //}
+                //else
+                //{
+                //    return message.CreateReplyMessage(closingPrice.ToString());
+                //}
             }
             else
             {
