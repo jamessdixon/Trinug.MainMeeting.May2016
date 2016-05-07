@@ -4,3 +4,7 @@ Add references to your project: Microsoft.Bot.Builder
 
 http://docs.botframework.com/connector/getstarted/#getting-started-in-net
 http://docs.botframework.com/sdkreference/csharp/
+
+https://dev.projectoxford.ai
+1) Create an app
+2) 

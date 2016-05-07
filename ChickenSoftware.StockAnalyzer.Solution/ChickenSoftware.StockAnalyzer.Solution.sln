@@ -7,6 +7,11 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ChickenSoftware.StockAnalyz
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChickenSoftware.StockAnalyzer.Bot", "ChickenSoftware.StockAnalyzer.Bot\ChickenSoftware.StockAnalyzer.Bot.csproj", "{A8BA1066-5695-4D71-ABB4-65E5A5E0C3D4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "data", "data", "{0B22B88F-31D2-44DE-9A36-A840B985A0F8}"
+	ProjectSection(SolutionItems) = preProject
+		data\Luis.json = data\Luis.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
