@@ -2,7 +2,7 @@
 2) Create Bot Project
 3) Run the emulator
 
-4) Create FSharp Project (F# 4.3, .NEt 4.6)
+4) Create FSharp Project (F# 4.3, .NET 4.6)
 5) Open Nuget and add FSharp.Data
 
 #r "../packages/FSharp.Data.2.3.0/lib/net40/FSharp.Data.dll"
@@ -60,6 +60,8 @@ let x = rows |> Seq.map(fun si -> si.Date.ToOADate()) |> Seq.toArray
 let y = rows |> Seq.map(fun si -> (float)si.``Adj Close``) |> Seq.toArray
 
 8) Copy in code
+
+let regression = SimpleLinearRegression()
 let sse = regression.Regress(x,y)
 let mse = sse/float x.Length 
 let rmse = sqrt(mse)
@@ -100,7 +102,11 @@ entity.Entity
 
 
 4) Add in reference to
+
 System.Net.Http and System.Web
+
+open System.Net.Http
+open System.Web
 
 change client and message to use
 
