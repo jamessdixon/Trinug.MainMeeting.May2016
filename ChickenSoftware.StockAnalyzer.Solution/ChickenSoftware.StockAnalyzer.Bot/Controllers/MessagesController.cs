@@ -29,10 +29,10 @@ namespace ChickenSoftware.StockAnalyzer.Bot
                 //return message.CreateReplyMessage($"You sent {length} characters");
                 var stockAnalyzer = new StockAnalyzer();
 
+                //var closingPrice = stockAnalyzer.GetStockClose(message.Text);
+
                 var ticker = stockAnalyzer.GetTicker(message.Text);
                 var closingPrice = stockAnalyzer.GetStockClose(ticker);
-
-                //var closingPrice = stockAnalyzer.GetStockClose(message.Text);
 
                 if (closingPrice == -1.0)
                 {
